@@ -1,0 +1,51 @@
+/*
+   statusbar-overlay sets the background color for the overlay. Black text is the default when the statusbar plugin is not added. When the
+   statusbar plugin is added, it also adds default setting to make the content white via:
+
+       <preference name="StatusBarStyle" value="lightcontent"/>
+
+   Setting the background color to black will allow the default light content (white text/icons) to show on it. The statusbar plugin is included
+   in the config.xml file and will be added by the CLI when you build locally.
+
+   See https://github.com/apache/cordova-plugin-statusbar
+*/
+
+.content-block.task-block{
+    padding: 0;
+}
+
+.btm-tabs{
+    background-color: #000;
+    display: flex;
+}
+
+.btm-tabs a{
+    flex: 1;
+    text-align: center;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.task-list{
+    list-style-type: none;
+    padding: 0;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #ccc;
+
+}
+
+.task-list li{
+    background-color: #fff;
+
+}
+
+.task-list li p{
+    color: #000000;
+    margin: 0px;
+    padding: 10px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #ccc;
+
+}
